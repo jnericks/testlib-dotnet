@@ -9,6 +9,9 @@ assembly_info:
 
 configuration: Release  
 
+before_build:
+  - nuget restore src\TestLib.sln
+
 build:
   project: src\TestLib.sln
 
