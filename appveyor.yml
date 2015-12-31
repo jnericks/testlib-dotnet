@@ -1,6 +1,8 @@
 version: 1.0.{build}
 before_build:
   - nuget restore src\TestLib.sln
+after_test:
+  - nuget pack TestLib.nuspec
 configuration:
   - Debug
   #- Release
@@ -10,3 +12,8 @@ assembly_info:
   assembly_version: "{version}"
   assembly_file_version: "{version}"
   assembly_informational_version: "{version}"
+deploy:
+  provider: NuGet
+  api_key:
+    secure: 1b2+bxbWw/urAQ8b9c2N11DmYv/+MjTEvCgE/ZGw2WFfJXKGeXCPBqYkkuHe8HWN
+  artifact: /.*\.nupkg/
