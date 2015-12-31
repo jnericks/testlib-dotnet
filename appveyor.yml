@@ -16,7 +16,7 @@ build:
   project: src\TestLib.sln
 
 after_test:
-  - nuget pack TestLib.nuspec
+  - nuget pack TestLib.nuspec -Version $env:appveyor_build_version
 
 artifacts:
   - path: src\TestLib\bin\Release\TestLib.dll
