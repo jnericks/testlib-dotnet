@@ -3,7 +3,7 @@ before_build:
   - nuget restore src\TestLib.sln
 configuration:
   - Debug
-  - Release
+  #- Release
 assembly_info:
   patch: true
   file: AssemblyInfo.*

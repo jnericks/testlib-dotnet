@@ -18,6 +18,6 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="src\TestLib\bin\Release\jnericks.TestLib.dll" target="lib\net452" />
+        <file src="src\TestLib\bin\Debug\jnericks.TestLib.dll" target="lib\net452" />
     </files>
 </package>
