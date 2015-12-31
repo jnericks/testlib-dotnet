@@ -1,3 +1,12 @@
 version: 1.0.{build}
 before_build:
   - nuget restore src\TestLib.sln
+configuration:
+  - Debug
+  - Release
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "{version}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"

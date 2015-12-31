@@ -20,3 +20,4 @@ packages
 .nuget
 project.lock.json
 .vs
+*.nupkg

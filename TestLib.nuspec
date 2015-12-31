@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+    <metadata>
+        <id>TestLib</id>
+        <version>$version$</version>
+        <authors>Jon Erickson (@jnericks)</authors>
+        <licenseUrl>https://github.com/jnericks/testlib-dotnet/blob/master/LICENSE.md</licenseUrl>
+        <projectUrl>https://github.com/jnericks/testlib-dotnet</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Base Test Library for .NET Projects</description>
+        <copyright>Copyright 2015 Jon Erickson</copyright>
+        <tags>test</tags>
+        <dependencies>
+            <dependency id="AutoFixture" version="3.37.3" />
+            <dependency id="FluentAssertions" version="4.1.1" />
+            <dependency id="NSubstitute" version="1.9.2.0" />
+            <dependency id="xunit" version="2.1.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="src\TestLib\bin\Release\jnericks.TestLib.dll" target="lib\net452" />
+    </files>
+</package>
