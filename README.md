@@ -2,6 +2,7 @@ TestLib .NET
 ================================
 
 [![Build status](https://ci.appveyor.com/api/projects/status/h9dbwikk0ca8chb3?svg=true)](https://ci.appveyor.com/project/jnericks/testlib-dotnet)
+[![NuGet](http://img.shields.io/nuget/v/testlib-dotnet.svg)](https://www.nuget.org/packages/testlib-dotnet/)
 
 What is TestLib?
 --------------------------------
