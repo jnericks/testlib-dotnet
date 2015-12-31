@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <package >
     <metadata>
-        <id>TestLib</id>
+        <id>testlib-dotnet</id>
+        <title>TestLib.NET</title>
         <version>1.0</version>
         <authors>Jon Erickson (@jnericks)</authors>
         <licenseUrl>https://github.com/jnericks/testlib-dotnet/blob/master/LICENSE.md</licenseUrl>
