@@ -40,7 +40,7 @@ namespace jnericks.TestLib
                 if (type == typeof(string) || type.IsValueType)
                     _parameters.Add(new Tuple<Type, object>(type, type.Default()));
                 else
-                    _parameters.Add(new Tuple<Type, object>(type, type.Mock()));
+                    _parameters.Add(new Tuple<Type, object>(type, type.Fake()));
             }
         }
 
@@ -108,24 +108,6 @@ namespace jnericks.TestLib
                 throw new InvalidOperationException($@"{typeof(TDependency).Name} is not a depedency of {typeof(TSystemUnderTest).Name}");
 
             return new DoForDependency<TDependency>(_parameters);
-        }
-
-        public class DoForDependency<TDependency>
-        {
-            readonly IList<Tuple<Type, object>> _parameters;
-
-            public DoForDependency(IList<Tuple<Type, object>> parameters)
-            {
-                _parameters = parameters;
-            }
-
-            public void Use(TDependency dependency)
-            {
-                var tuple = _parameters.First(x => x.Item1 == typeof(TDependency));
-                var index = _parameters.IndexOf(tuple);
-                _parameters.RemoveAt(index);
-                _parameters.Insert(index, new Tuple<Type, object>(tuple.Item1, dependency));
-            }
         }
     }
 }

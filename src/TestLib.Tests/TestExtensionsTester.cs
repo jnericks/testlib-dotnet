@@ -27,12 +27,12 @@ namespace jnericks.TestLib.Tests
         }
 
         [Fact]
-        public void should_be_able_to_mock()
+        public void should_be_able_to_fake()
         {
-            var message = Fixture.Create<string>();
-            var mock = (IForTest)typeof(IForTest).Mock();
-            mock.Do().Returns(message);
-            mock.Do().Should().Be(message);
+            var message = "some message";
+            var fake = (IForTest)typeof(IForTest).Fake();
+            fake.Do().Returns(message);
+            fake.Do().Should().Be(message);
         }
     }
 

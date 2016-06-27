@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseUnitTester.cs" />
+    <Compile Include="DoForDependency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemUnderTestFactory.cs" />
     <Compile Include="TestExtensions.cs" />

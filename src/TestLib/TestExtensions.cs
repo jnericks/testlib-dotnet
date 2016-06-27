@@ -12,7 +12,7 @@ namespace jnericks.TestLib
                                         .Invoke(new GenericHelper(), null);
         }
 
-        public static object Mock(this Type type)
+        public static object Fake(this Type type)
         {
             return Substitute.For(new[] { type }, null);
         }
