@@ -2,15 +2,12 @@
 using FluentAssertions;
 using jnericks.TestLib.Tests.TestObjects;
 using NSubstitute;
-using Ploeh.AutoFixture;
 using Xunit;
 
 namespace jnericks.TestLib.Tests
 {
     public class SystemWithDependenciesTester : BaseUnitTester<SystemForTest>
     {
-        private Fixture myFixture = new Fixture();
-
         [Fact]
         public void Should_be_able_to_create_sut()
         {

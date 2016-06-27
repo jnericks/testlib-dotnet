@@ -1,6 +1,5 @@
 ﻿using FluentAssertions;
 using NSubstitute;
-using Ploeh.AutoFixture;
 using Xunit;
 
 namespace jnericks.TestLib.Tests
